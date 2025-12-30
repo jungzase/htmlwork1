@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 
+    1) 바디의 색지정 
+    2) 공통적인 설정(*)- 글자색, 글자크기, 중앙정렬
+    3) #wrap 설정-너비,높이(선택), margin:0 auto
+    4) aside, #content 설정-너비,높이 배경색    
+    5) aside, header, main, footer 설정-너비(선택), 높이, 배경
+    */
+    body{background-color: azure;}
+    *{color: white; font-size: 40px; text-align: center;}
+    #wrap{width: 1009px; height: auto; margin: 0 auto;}
+    #aside{width: 300px; height: 1000px; background-color:rgb(170, 194, 228);}
+    #content{width: 700px; height: 1000px; background-color:rgb(157, 157, 206);}
+    #aside,#content{display: inline-block; vertical-align: top;}
+    /* #aside display 방식 inline-block 일 떄 box가 글자취급 baseline이 아래정렬에서
+     vertical-align: top 을 이용해 상단에 위치(top)하도록 설정 변경.*/
+    header, main, footer{width: 700px;height: 330px;}
+    header{background-color: antiquewhite;}
+    main{background-color: rgb(175, 157, 133);}
+    footer{background-color: rgb(136, 130, 123);}
+    </style>
+    
+</head>
+<body>
+    <div id="wrap">
+        <div id="aside">
+            <aside>aside</aside>
+        </div>
+        <div id="content">
+            <header>header</header>
+            <main>main</main>
+            <footer>footer</footer>
+        </div>
+    </div>
+    
+</body>
+</html>

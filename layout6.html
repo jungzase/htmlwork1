@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+    1) 전체 width, height, 색, 폰트 크기, 폰트 색
+    2) wrap
+    3) container
+    -->
+    <style>
+        *{margin: 0; padding: 0;}
+        #wrap{
+            color: rgb(71, 69, 69); font-size: 30px; text-align: center;
+            width: 100%; height: inherit;
+        }
+        #header-top{
+            width: 100%; height: inherit; background-color: rgba(0, 183, 255, 0.95);
+        }
+        #header-nav{
+            width: 100%; height: inherit; background-color: rgba(0, 183, 255, 0.85);
+        }
+        #banner-wrap{
+            width: 100%; height: 150px; background-color: rgba(0, 183, 255, 0.75);
+        }
+        #content1{
+            width: 100%; height: 250px; background-color: rgba(0, 183, 255, 0.65);
+        }
+        #content1{
+            width: 100%; height: 250px; background-color: rgba(0, 183, 255, 0.55);
+        }        
+        #content2{
+            width: 100%; height: 250px; background-color: rgba(0, 183, 255, 0.45);
+        }        
+        #content3{
+            width: 100%; height: 250px; background-color: rgba(0, 183, 255, 0.35);
+        }        
+        #footer-nav{
+            width: 100%; height: inherit; background-color: rgba(0, 183, 255, 0.25);
+        }        
+        #footer-info{
+            width: 100%; height: inherit; background-color: rgba(0, 183, 255, 0.15);
+        }
+        .header-top-container{
+            width: 800px; height: inherit; 
+            background-color: rgb(0, 255, 136); margin: 0 auto;
+        }
+        .header-nav-container{
+            width: 800px; height: inherit; 
+            background-color: rgba(0, 255, 136,0.95); margin: 0 auto;
+        }
+        .banner-container{
+            width: 800px; height: inherit; 
+            background-color: rgba(0, 255, 136,0.85); margin: 0 auto;
+        }
+        .content1-container{
+            width: 800px; height: inherit; 
+            background-color: rgba(0, 255, 136,0.75); margin: 0 auto;
+        }
+        .content2-container{
+            width: 800px; height: inherit; 
+            background-color: rgba(0, 255, 136,0.65); margin: 0 auto;
+        }
+        .content3-container{
+            width: 800px; height: inherit; 
+            background-color: rgba(0, 255, 136,0.55); margin: 0 auto;
+        }
+        .footer-nav-container{
+            width: 800px; height: inherit; 
+            background-color: rgba(0, 255, 136,0.45); margin: 0 auto;
+        }
+        .footer-info-container{
+            width: 800px; height: inherit; 
+            background-color: rgba(0, 255, 136,0.35); margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header-wrap"> 
+            <div id="header-top">
+                <div class="header-top-container">header-top</div>
+            </div>
+            <div id="header-nav">
+                <div class="header-nav-container">header-nav</div>
+            </div>
+        </div>
+        <div id="banner-wrap"> 
+            <div class="banner-container">banner-wrap</div>
+        </div>
+        <div id="contentwrap"> 
+            <div id="content1">
+                <div class="content1-container">content1</div>
+            </div>
+            <div id="content2">
+                <div class="content2-container">content2</div>
+            </div>
+            <div id="content3">
+                <div class="content3-container">content3</div>
+            </div>
+        </div>
+        <div id="footer-wrap"> 
+            <div id="footer-nav">
+                <div class="footer-nav-container">footer-nav</div>
+            </div>
+            <div id="footer-info">
+                <div class="footer-info-container">footer-info</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
